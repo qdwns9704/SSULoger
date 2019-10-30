@@ -30,35 +30,25 @@
 1. git fetch or pull or clone
 2. [Jekyll] 설치
 
-'''console
-
+```console
 $ git clone git@github.com:qdwns9704/qdwns9704.github.io.git
-
 $ cd qdwns9704.github.io
-
 $ bundle install
-
-'''
+```
 
 ### 실행(로컬)
 
-'''
-
+```consol
 $ bundle exec Jekyll serve
-
 $ open http://localhost:4000
-
-'''
+```
 
 ### 배포(발행)
 
-'''
-
+```
 $ git commit -m '...'
-
 $ git push origin master
-
-'''
+```
 
 ### 새 글 작성
 
