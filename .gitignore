@@ -1,2 +1,9 @@
 # Mac 삭제기록 파일
 .DS_Store
+
+# Jekyll 캐시 파일
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
