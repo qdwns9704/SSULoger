@@ -1,6 +1,33 @@
 <!DOCTYPE html>
 <title>SSULoger</title>
-  this is _layouts/default.html
-  index.html은 메인 화면을 어느 페이지로 연결해줄지 결정해줌.
+
+<html>
+<body>
+{% include footer.html %}
+
+<script src="{{ site.asset_url }}/lib/jquery-1.12.0.min.js"></script>
+<script src="{{ site.asset_url }}/lib/jquery.magnific-popup.min.js"></script>
+<script src="{{ site.asset_url }}/js/index.js"></script>
+
+{% if site.google_analytics %}
+    {% include google_analytics.html %}
+{% endif %}
+
+{% if site.facebook %}
+    {% include facebook_sdk.html %}
+{% endif %}
+
+{% if site.twitter %}
+    {% include twitter_sdk.html %}
+{% endif %}
+
+{% if site.google_plus %}
+    {% include google_plus_sdk.html %}
+{% endif %}
+
+</body>
+</html>
+
+
   
 
