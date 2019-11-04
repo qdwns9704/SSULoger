@@ -62,6 +62,8 @@ $ git push origin master
 
 ### 8. 구조
 
+> 자세한 내용은 [Jekyll] 참조할 것.
+
 * Gemfile, Gemfile.lock
 
   > 사이트에 필요한 Ruby Gem을 Bundler에게 알려주는 역할
@@ -69,6 +71,27 @@ $ git push origin master
 * _config.yml
 
   > 환경 설정 파일
+  >
+  > ```
+  > source: DIR										// Jekyll 이 읽어들일 파일의 경로를 변경한다.
+  > 
+  > destination: DIR							// Jekyll 이 생성할 파일의 경로를 변경한다.
+  > 
+  > safe: BOOL										// 사용자 플러그인을 비활성화하고 심볼릭 링크를 무시한다.
+  > 
+  > exclude: [DIR, FILE, ...]			// 특정 디렉토리나 파일을 변환되지 않도록 제외시킨다.
+  > 															// Site Source 를 기준으로 한 상대경로로 정의하며,
+  > 															// Site Source 디렉토리 바깥의 다른 경로는 지정할 수 없다.
+  > 															
+  > include: [DIR, FILE, ...] 		// 특정 디렉토리나 파일을 변환 작업에 강제로 포함시킨다. 사이트 생성  
+  > 															// 전 Site Destination 을 초기화 때, 유지 할 파일을 지정한다. 
+  > 															
+  > timezone: TIMEZONE						// 사이트 생성에 사용할 타임존을 지정한다. 이 옵션은 루비가 날짜와 시간
+  > 															// 을 생성/수정할 때 사용하는 환경변수인 TZ 를 설정한다. IANA 타임존 
+  > 															// 데이터베이스의 모든 항목을 사용할 수 있다.
+  > 
+  > encoding: ENCODING						// 파일의 인코딩을 지정한다.
+  > ```
 
 * directory
 
