@@ -7,14 +7,11 @@ url: 'http://qdwns9704.github.io'
 repository: qdwns9704/qdwns9704.github.io
 timezone: Asia/Seoul
 permalink: /:year/:month/:day/:title/
-
-
+asset_url: /assets
+excerpt_separator: <!--more-->
 markdown: kramdown
 krandown:
   input: GFM
   highlighter: rouge
-
 exclude: [README.md, Gemfile, Gemfile.lock]
 keep_files: [assets, files]
-
-

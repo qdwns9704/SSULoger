@@ -1,8 +1,10 @@
 ---
-layout:page
-title: SOLVE
+layout: page
+title: 문제해결
 permalink: /solve/
-excerpt: 문제해결
+sitemap: yes
+excerpt: 문제해결 페이지
+tags: [solve]
 ---
 
-준비중
+solve.md에서 임포트되는 내용입니다.
