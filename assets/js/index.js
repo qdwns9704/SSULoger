@@ -15,7 +15,7 @@
             }
         }
 
-        // 토글 버튼 기능
+        // 메뉴: 토글 버튼 기능
         $('#menu-toggle').click(function (e) {
             e.stopPropagation();
             e.preventDefault();
@@ -27,6 +27,7 @@
             }
         });
 
+        // 검색: 토글 버튼 기능
         $('#search-toggle').click(function (e) {
             e.stopPropagation();
             e.preventDefault();
@@ -38,6 +39,7 @@
             }
         });
 
+        // 스크롤: 상단으로 올라가기 버튼 표시 기능
         $(window).scroll(function () {
             var viewportTop = $(window).scrollTop();
             if (viewportTop) {
