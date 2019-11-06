@@ -26,7 +26,18 @@
 >    * Git 활용 및 협업 능력 향상
 >    * 웹사이트 개발 및 운용 능력 향상
 >    * UI 디자인 설계 능력 향상
-> 6. 진행 현황
+> 6. 협업 규칙
+>    1. 모든 팀 구성원은 **clone** 명령어로 중앙저장소를 복제한 로컬 저장소를 생성 후 로컬에서 작업
+>    2. 모든 **Commit**은 원격저장소의 변경 이력을 로컬저장소에 **동기화** 한 뒤 **Push**
+>    3. 새로운 기능을 개발할 때에는 **feature-NAME**으로 **Branch**로 분기 후 해당 Branch에서 작업
+>    4. 기능 개발이 완료되면 **Push**한 뒤 **Pull-Request**로 팀장에게 **Merge** 요청
+>    5. 각 기능이 개발이 완료되면 **develop**에 **Merge**
+>    6. 원격저장소의 **develop**에서 버그가 없는 상태일 경우 **master**로 **Merge**
+>    7. 원격저장소에서 보여지는 **README.md**는 **master**에서 수정
+>    8. 포스트는 마크다운으로 작성
+>    9. 포스트 작성은 **master**에서 작업하며, 작성중인 포스트는 **_draft**, 발행 시 **_posts** 디렉토리에 저장
+>    10. 기능 개발은 **_includes** 디렉토리에서 작업하며, 필요한 리소스들은 **assets** 디렉토리에 저장
+> 7. 진행 현황
 >    * README.md (진행중)
 >    * header (진행중)
 >    * footer (진행중)
@@ -58,8 +69,32 @@ $ git push origin master
 
 ### 4. 새 글 작성
 
+1. `_drafts` 디렉토리에 `ANY_POST_NAME.md` 이름으로 파일 생성
+
+2. 포스트는 마크다운으로 작성
+
+   - [gfm] 문법, [kramdown] 파서, [rouge] 문법강조기 사용
+
+3. 확인
+
+   ```
+   $ bundle exec jekyll serve --drafts
+   ```
+
 ### 5. 글 쓰기
 
+1. `_posts` 디렉토리에 `yyyy-mm-dd-slug.md` 파일로 복사(or 이동)
+   - slug: 해당 포스트의 고유 키로 url의 일부로 사용. 왠만하면 특수문자없이 영문자,숫자,-(하이픈),.(점)...만 사용
+   - yyyy,mm,dd: 발행 년,월,일
+   - 참고: 최종적으로 포스트의 url(permalink)는 http://qdwns9704.github.io/yyyy/mm/dd/slug/
+
+2. 파일 상단에 [front matter] 작성
+ - layout: post # 레이아웃(필수). `page` 레이아웃을 사용하면 목록에 보이지 않는 글을 쓸 수 있음.
+ - title: '제목' # 제목(필수)
+ - author: `lastname.firstname` # 필자(필수)
+ - tags: `[tag1,tag2,tag3,...]` # 태그 목록(선택). 왠만하면 특수문자없이 영소문자,숫자,-(하이픈),.(점)...만 사용.
+ - image: http://... # 커버이미지 url(선택)
+ - date: `YYYY-MM-DD HH:MM:SS` # 발행일(필수)
 ### 6. 필자 등록
 
 ### 7. 태그 등록
@@ -177,4 +212,7 @@ $ git push origin master
 [YAML 머리말]: https://jekyllrb-ko.github.io/docs/frontmatter/
 [Github Pages]: https://pages.github.com
 [Jekyll]: https://jekyllrb.com
+[gfm]: https://guides.github.com/features/mastering-markdown/
+[kramdown]: http://kramdown.gettalong.org
+[rouge]: http://rouge.jneen.net
 
