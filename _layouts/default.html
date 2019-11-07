@@ -1,60 +1,14 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
-
+<html>
 <head>
     {% include head.html %}
 </head>
 
-<!-- 푸터 위치를 하단으로 고정시키기 위해 중앙공간을 확보하기 위한 코드-->
-<style tyle="text/css">
-html,
-body{
-	margin:0;
-	padding:0;
-	height:100%;
-}
-#wrapper{
-	position:relative;
-	min-height:100%;
-}
-#container{
-	padding:20px;
-	}
-#footer{
-	position:absolute;
-	bottom:0;
-	width:100%;
-	height:200px;
-	background:#ccc;
-}
-</style>
-<!-- 여기까지-->
-
-<html>
 <body>
-	<div id="wrapper">
-		<div id="container">container
-		</div>
-		
-	<ul id="footer-menu">
-		<li><a href="//www.ssu.ac.kr">Soongsil Univ.</a></li>
-		<li><a href="//www.docs.google.com">Document</a></li>
-	</ul>
-	<p id="copyright">
-	<a href="//www.SSULGOER.net">&copy; 2019.SSULOGER</a>
-	All rights reserved.
-	<br>
-	Powered by
-	<a href="//www.github.com">Github</a>
-	</p>
-
-</div>
-
-	</div>
-<script src="{{ site.asset_url }}/js/index.js"></script>
+	{% include footer.html %}
+	<script src ="{{ site.asset_url }}/js/index.js"></script> 
 </body>
-</html>
-
+	</html>
 
   
 
