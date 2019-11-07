@@ -1,3 +1,24 @@
+
+/*로고*/
+#logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 123px;
+    height: 60px;
+    margin: 10 0;
+    padding: 0;
+    background: url(../images/logo.png) no-repeat center;
+    background-size: 123px 26px;
+}
+
+.sr-only {
+    position: absolute;
+    top: -9999px;
+    left: -9999px
+}
+
+/*메뉴바*/
 @import url('https://fonts.googleapis.com/css?family=Oswald:500');
 .back{
   position: fixed;
@@ -26,10 +47,11 @@ nav a{
   text-transform:uppercase;
   text-decoration:none;
   color:#16151b;
-  margin:0 15px;
-  font-size:16px;
+  margin:0 20px;
+  font-size:20px;
   letter-spacing:1px;
   position:relative;
+  top: 1px;
   display:inline-block;
 }
 nav a:before{
