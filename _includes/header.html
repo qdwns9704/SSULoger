@@ -1,20 +1,19 @@
-i<div id = "header">
-    <button id = "menu-toggle" type="button">
-        <span class="sr-only">Toggle Navigation Menu </span>
-       </button>
-    <button id="search-toggle" type="button">
-        <span class="sr-only">Toggle Search Form</span>
-    </button>
-    <a id="logo" href="/">
-        <span class="sr-only">Code Folio*</span>
-    </a>
-    <form id="search">
-        <input id="searchQueryEdit" name="q" type="search" placeholder="Search..." value="" />
-    </form>
-    <ul id="menu" class="nav">
-        <li class="{% if page.url == '/solve/' %} active {% endif %}"><a href="{{ base_path }}/solve/">SOLVE</a></li>
-        <li class="{% if page.url == '/project/' %} active {% endif %}"><a href="{{ base_path }}/project/">PROJECT</a></li>
-        <li class="{% if page.url == '/open_source/' %} active {% endif %}"><a href="{{ base_path }}/open_source/">OPEN SOURCE</a></li>
-        <li class="{% if page.url == '/contributor/' %} active {% endif %}"><a href="{{ base_path }}/contributor/">CONTRIBUTOR</a></li>
-    </ul>
+<div id="header">
+  <button id="menu-toggle" type="button">
+    <span class="sr-only">Toggle Navigation Menu</span>
+  </button>
+  <button id="search-toggle" type="button">
+    <span class="sr-only">Toggle Search Form</span>
+  </button>
+  <a id="logo" href="/">
+    <span class="sr-only">SSULoger</span>
+  </a>
+  <form id="search">
+    <input id="searchQueryEdit" name="q" type="search" placeholder="Search..." value="" />
+  </form>
+  <ul id="menu" class="nav">
+    <li class="{% if page.url != '/solve/' and page.url != '/solve/' and page.url != '/solve/' %} active {% endif %}"><a href="{{ base_path }}/">메인화면</a></li>
+        <li class="{% if page.url == '/solve/' %} active {% endif %}"><a href="{{ base_path }}/solve/">solve</a></li>
+        <li class="{% if page.url == '/project/' %} active {% endif %}"><a href="{{ base_path }}/project/">project</a></li>
+  </ul>
 </div><!-- #header -->
