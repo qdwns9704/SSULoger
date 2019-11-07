@@ -1,19 +1,17 @@
 <div id="header">
-  <button id="menu-toggle" type="button">
-    <span class="sr-only">Toggle Navigation Menu</span>
-  </button>
-  <button id="search-toggle" type="button">
-    <span class="sr-only">Toggle Search Form</span>
-  </button>
-  <a id="logo" href="/">
-    <span class="sr-only">SSULoger</span>
-  </a>
-  <form id="search">
-    <input id="searchQueryEdit" name="q" type="search" placeholder="Search..." value="" />
-  </form>
-  <ul id="menu" class="nav">
-    <li class="{% if page.url != '/solve/' and page.url != '/solve/' and page.url != '/solve/' %} active {% endif %}"><a href="{{ base_path }}/">메인화면</a></li>
-        <li class="{% if page.url == '/solve/' %} active {% endif %}"><a href="{{ base_path }}/solve/">solve</a></li>
-        <li class="{% if page.url == '/project/' %} active {% endif %}"><a href="{{ base_path }}/project/">project</a></li>
-  </ul>
+  <a id="logo" href="/">SSULoger</a>
+  <div class="back"></div>
+  <nav>
+    <a href="{{ base_path }}/">MAIN</a>
+    <a href="{{ base_path }}/solve/">SOLVE</a>
+    <a href="{{ base_path }}/project/">PROJECT</a>
+  </nav>
+
+  <div class="flexbox">
+    <div class="search">
+      <div>
+        <input type="text" placeholder="       Search . . ." required>
+      </div>
+    </div>
+  </div>
 </div><!-- #header -->
