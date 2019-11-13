@@ -20,7 +20,7 @@ h5,
 h6 {
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 400;
-    color: #1e1e1e;
+    color: black;
 }
 
 pre,
@@ -51,7 +51,7 @@ a, a:link, a:visited, a:active, a:hover {
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-    color: #1e1e1e;
+    color: black;
 }
 
 .container-fluid {
@@ -230,12 +230,14 @@ nav{
   top:25px;
   left:0px;
   text-align:center;
+
 }
 nav a{
   font-family: 'Noto Sans KR', sans-serif;
   font-weight:500;
   text-transform:uppercase;
   text-decoration:none;
+  text-emphasis-color: black;
   color:#1e1e1e;
   margin:0 20px;
   font-size:20px;
