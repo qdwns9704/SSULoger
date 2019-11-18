@@ -11,6 +11,8 @@
 * atom 설치 atom 실행 후 setting 항목 클릭
 * "+" install 로가서 markdown-mindmap,markdown-preview-enhanced 설치
 * 위 플러그인은 앞서 말했던 문제점을 해결해 주는 markdown 문서를 preview 해주는 플러그인 이다.
+* 사용 화면
+![atom캡쳐화면](/assets/atom캡쳐화면.JPG)
 
 ## 마크다운 문법 간단정리
 
