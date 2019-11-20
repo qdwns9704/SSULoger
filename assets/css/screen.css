@@ -355,17 +355,19 @@ html, body {
 /* 컨트리뷰터 세팅*/
 .content-container {
   position: relative;
-  left: 250px;
+  left: 300px;
   box-sizing: content-box;
   width: 900px;
   height: 1250px;
-  padding: 100px;
+  padding: 50px;
 }
 
+
+
 .introduce_box {
-  box-sizing: content-box;
   width: auto;
   height: 220px;
+  margin-bottom: 30px;
   background-color: white;
   border-radius: 30px;
   -moz-border-radius: 30px;
@@ -376,10 +378,8 @@ html, body {
 
 .introduce_box.image {
   width: 220px;
-  height: 220px border-radius: 220px;
-  -moz-border-radius: 220px;
-  -khtml-border-radius: 220px;
-  -webkit-border-radius: 220px;
+  height: 220px;
+  border-radius: 50%;
   float: left;
   border: 0px;
 }
@@ -394,7 +394,16 @@ html, body {
 .introduce_box.content {
   width: auto;
   margin-left: 10px;
-  margin-bottom: 30px;
   float: left;
   border: 1px solid black;
+}
+
+.introduce_box.verticl_line {
+  width: 2px;
+  margin-top: 15px;
+  margin-left:15px;
+  height: 190px;
+  background-color: grey;
+  float: left;
+  border: 0px;
 }
