@@ -375,7 +375,8 @@ html, body {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 12px;
   position: relative;
-  left: 300px;
+  left: 50%;
+  margin-left:-450px;
   box-sizing: content-box;
   width: 900px;
   height: 1300px;
