@@ -1,20 +1,19 @@
-i<div id = "header">
-    <button id = "menu-toggle" type="button">
-        <span class="sr-only">Toggle Navigation Menu </span>
-       </button>
-    <button id="search-toggle" type="button">
-        <span class="sr-only">Toggle Search Form</span>
-    </button>
-    <a id="logo" href="/">
-        <span class="sr-only">Code Folio*</span>
-    </a>
-    <form id="search">
-        <input id="searchQueryEdit" name="q" type="search" placeholder="Search..." value="" />
-    </form>
-    <ul id="menu" class="nav">
-        <li class="{% if page.url == '/solve/' %} active {% endif %}"><a href="{{ base_path }}/solve/">SOLVE</a></li>
-        <li class="{% if page.url == '/project/' %} active {% endif %}"><a href="{{ base_path }}/project/">PROJECT</a></li>
-        <li class="{% if page.url == '/open_source/' %} active {% endif %}"><a href="{{ base_path }}/open_source/">OPEN SOURCE</a></li>
-        <li class="{% if page.url == '/contributor/' %} active {% endif %}"><a href="{{ base_path }}/contributor/">CONTRIBUTOR</a></li>
-    </ul>
-</div><!-- #header -->
+<div id = "header">
+  <nav>
+    <a href="{{ base_path }}/solve/">SOLVE</a>
+    <a href="{{ base_path }}/project/">PROJECT</a>
+    <a href="{{ base_path }}/contributor/">CONTRIBUTOR</a>
+    <a href="{{ base_path }}/opensource/">OPEN SOURCE</a>
+  </nav>
+
+  <a id="logo" href="/">
+    <span class="sr-only">SSULOGER</span>
+  </a>
+  <div class="flexbox">
+    <div class="search">
+      <div>
+        <input type="text" placeholder="       Search . . ." required>
+      </div>
+    </div>
+  </div>
+</div>

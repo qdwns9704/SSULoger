@@ -1,6 +1,23 @@
 <!DOCTYPE html>
-<title>SSULoger</title>
-  this is _layouts/default.html
-  index.html은 메인 화면을 어느 페이지로 연결해줄지 결정해줌.
-  
+<title>SSULoger - qdwns9704.github.io</title>
+<html>
+<head>
+  {% include head.html %}
+</head>
 
+<body class="{{ page.layout | append: '-template' }}">
+
+  {% include header.html %}
+
+  <div id="wrapper">
+    {{ content }}
+
+    <div class="clearfix"></div>
+
+  </div>
+
+  {% include footer.html %}
+
+  <script src="{{ site.asset_url }}/js/index.js"></script>
+</body>
+</html>
