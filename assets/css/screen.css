@@ -1,15 +1,17 @@
 /* common */
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
 * {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: sans-serif;
-    font-weight: 300; /* @@iolo 200 -> 300, 200 for retina only! */
-    color: #505050;
-    background-color: #fff;
+  font-family: sans-serif;
+  font-weight: 300;
+  /* @@iolo 200 -> 300, 200 for retina only! */
+  color: #505050;
+  background-color: #fff;
 }
 
 h1,
@@ -18,17 +20,17 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Noto Sans KR', sans-serif;
-    font-weight: 400;
-    color: black;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 400;
+  color: black;
 }
 
 pre,
 code,
 tt,
 kbd {
-    font-family: monospace;
-    font-weight: 300;
+  font-family: monospace;
+  font-weight: 300;
 }
 
 code.highlighter-rouge {
@@ -37,101 +39,101 @@ code.highlighter-rouge {
   padding-bottom: 0.2em;
   margin: 0;
   font-size: 85%;
-  background-color: rgba(27,31,35,0.05);
+  background-color: rgba(27, 31, 35, 0.05);
   border-radius: 3px;
 }
 
 b, strong, optgroup {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 a, a:link, a:visited, a:active, a:hover {
-    color: #505050;
-    text-decoration: none;
+  color: #505050;
+  text-decoration: none;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-    color: black;
+  color: black;
 }
 
 .container-fluid {
-    width: 100%;
+  width: 100%;
 }
 
 .container {
-    max-width: 940px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-right: 5px;
-    padding-left: 5px;
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 .sr-only {
-    position: absolute;
-    top: -9999px;
-    left: -9999px
+  position: absolute;
+  top: -9999px;
+  left: -9999px
 }
 
 .pull-left {
-    float: left !important;
+  float: left !important;
 }
 
 .pull-left img {
-    margin-right: 1em;
+  margin-right: 1em;
 }
 
 .pull-right {
-    float: right !important;
+  float: right !important;
 }
 
 .pull-right img {
-    margin-left: 1em;
+  margin-left: 1em;
 }
 
 .left {
-    text-align: left;
+  text-align: left;
 }
 
 .right {
-    text-align: right;
+  text-align: right;
 }
 
 .center {
-    text-align: center;
+  text-align: center;
 }
 
 .hcenter {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .vcenter {
-    display: table;
+  display: table;
 }
 
-.vcenter > * {
-    display: table-cell;
-    vertical-align: middle;
+.vcenter>* {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .ellipsis {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .clearfix {
-    zoom: 1;
+  zoom: 1;
 }
 
 .clearfix:before, .clearfix:after {
-    content: " ";
-    display: table;
+  content: " ";
+  display: table;
 }
 
 .clearfix:after {
-    clear: both;
+  clear: both;
 }
 
 /*해더 전체 설정*/
@@ -141,6 +143,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   border-bottom: 1px solid #e6e6e6;
   background-color: #fff;
 }
+
 /*로고*/
 #logo {
   position: absolute;
@@ -155,96 +158,101 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 /* footer */
-
 #footer {
-    height: 100px;
-    padding: 20px 30px;
-    border-top: 1px solid #d4d4d4;
-    background: #fff;
-    color: #505050;
-    font-size: 11px;
+  height: 100px;
+  padding: 20px 30px;
+  border-top: 1px solid #d4d4d4;
+  background: #fff;
+  color: #505050;
+  font-size: 11px;
 }
 
 #copyright {
   position: absolute;
-    padding-top: 10px;
+  padding-top: 10px;
 }
 
-#icons{
+#icons {
   position: absolute;
-  padding-top:5px;
-  left:92.5%;
+  padding-top: 5px;
+  left: 92.5%;
 }
 
 /*메뉴바*/
-nav{
+nav {
   width: 100%;
   position: relative;
-  top:25px;
-  left:0px;
-  text-align:center;
+  top: 25px;
+  left: 0px;
+  text-align: center;
+}
 
-}
-nav a{
+nav a {
   font-family: 'Noto Sans KR', sans-serif;
-  font-weight:500;
-  text-transform:uppercase;
-  text-decoration:none;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
   text-emphasis-color: black;
-  color:#1e1e1e;
-  margin:0 20px;
-  font-size:20px;
-  letter-spacing:1px;
-  position:relative;
+  color: #1e1e1e;
+  margin: 0 20px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  position: relative;
   top: 1px;
-  display:inline-block;
+  display: inline-block;
 }
-nav a:before{
-  content:'';
+
+nav a:before {
+  content: '';
   position: absolute;
   width: 100%;
   height: 3px;
-  background:#1e1e1e;
-  top:47%;
-  animation:out 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
-}
-nav a:hover:before{
-  animation:in 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
-
+  background: #1e1e1e;
+  top: 47%;
+  animation: out 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
 }
 
-@keyframes in{
-  0%{
+nav a:hover:before {
+  animation: in 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+}
+
+@keyframes in {
+  0% {
     width: 0;
-    left:0;
-    right:auto;
+    left: 0;
+    right: auto;
   }
-  100%{
-    left:0;
-    right:auto;
+
+  100% {
+    left: 0;
+    right: auto;
     width: 100%;
   }
 }
-@keyframes out{
-  0%{
-    width:100%;
+
+@keyframes out {
+  0% {
+    width: 100%;
     left: auto;
     right: 0;
   }
-  100%{
+
+  100% {
     width: 0;
     left: auto;
     right: 0;
   }
 }
-@keyframes show{
-  0%{
-    opacity:0;
-    transform:translateY(-10px);
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
   }
-  100%{
-    opacity:1;
-    transform:translateY(0);
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -275,18 +283,18 @@ html, body {
   margin-right: 30px;
 }
 
-.search > h3 {
+.search>h3 {
   font-weight: normal;
 }
 
-.search > h1,
-.search > h3 {
+.search>h1,
+.search>h3 {
   color: black;
   margin-bottom: 15px;
   text-shadow: 0 1px #0091c2;
 }
 
-.search > div {
+.search>div {
   display: inline-block;
   position: relative;
 }
@@ -877,7 +885,7 @@ body.page-template {
 }
 
 /*돋보기 작대기*/
-.search > div:after {
+.search>div:after {
   content: "";
   background: black;
   width: 4px;
@@ -888,8 +896,9 @@ body.page-template {
   transform: rotate(135deg);
   box-shadow: 1px 0 #0091c2;
 }
+
 /*커서*/
-.search > div > input {
+.search>div>input {
   color: black;
   font-size: 16px;
   background: transparent;
@@ -899,25 +908,110 @@ body.page-template {
   padding: 10px;
   border: solid 3px black;
   outline: none;
-  border-radius: 35px;/*둥글기*/
+  border-radius: 35px;
+  /*둥글기*/
   box-shadow: 0 1px #0091c2;
-  transition: width 0.5s; /*확장속도*/
+  transition: width 0.5s;
+  /*확장속도*/
 }
+
 /*확장됬을때 안에 글자 색깔*/
-.search > div > input::placeholder {
+.search>div>input::placeholder {
   color: black;
   opacity: 10;
 }
 
-.search > div > input::-ms-placeholder {
+.search>div>input::-ms-placeholder {
   color: black;
 }
 
-.search > div > input::-ms-input-placeholder {
-  color: black/*#efefef*/;
+.search>div>input::-ms-input-placeholder {
+  color: black
+    /*#efefef*/
+  ;
 }
+
 /*눌렀을때 검색창 길어지게하기*/
-.search > div > input:focus,
-.search > div > input:valid {
+.search>div>input:focus,
+.search>div>input:valid {
   width: 200px;
+}
+
+/* 컨트리뷰터 세팅*/
+.window_cont {
+  width: 100%;
+  height: 1500px;
+  background-color: #E7E7E7;
+}
+
+.title {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.title.big {
+  font-size: 15px;
+}
+
+.title.small {
+  font-size: 14px;
+}
+
+.content-container {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 12px;
+  position: relative;
+  left: 50%;
+  margin-left:-450px;
+  box-sizing: content-box;
+  width: 900px;
+  height: 1300px;
+  padding: 50px;
+  background-color: #E7E7E7;
+}
+
+.introduce_box {
+  font-family: 'Noto Sans KR', sans-serif;
+  width: auto;
+  height: 250px;
+  padding-top: 7.5px;
+  padding-left: 10px;
+  margin-bottom: 30px;
+  border-radius: 30px;
+  -moz-border-radius: 30px;
+  -khtml-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border: 2px solid grey;
+}
+
+.introduce_box.image {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  float: left;
+  border: 0px;
+}
+
+.introduce_box.profile {
+  font-family: 'Noto Sans KR', sans-serif;
+  width: auto;
+  margin-left: 20px;
+  float: left;
+  border: 0px solid black;
+}
+
+.introduce_box.content {
+  width: auto;
+  margin-left: 20px;
+  float: left;
+  border: 0px solid black;
+}
+
+.introduce_box.verticl_line {
+  width: 10px;
+  margin-top: 10px;
+  margin-left: 20px;
+  height: 210px;
+  background-color: grey;
+  float: left;
+  border: 0px;
 }
