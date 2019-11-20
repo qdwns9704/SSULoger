@@ -354,10 +354,21 @@ html, body {
 
 /* 컨트리뷰터 세팅*/
 .window_cont {
-  font-family: 'Noto Sans KR', sans-serif;
   width: 100%;
   height: 1500px;
   background-color: #E7E7E7;
+}
+
+.title {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.title.big {
+  font-size: 15px;
+}
+
+.title.small {
+  font-size: 14px;
 }
 
 .content-container {
@@ -376,7 +387,8 @@ html, body {
   font-family: 'Noto Sans KR', sans-serif;
   width: auto;
   height: 250px;
-  padding-top:7.5px;
+  padding-top: 7.5px;
+  padding-left: 10px;
   margin-bottom: 30px;
   border-radius: 30px;
   -moz-border-radius: 30px;
@@ -394,6 +406,7 @@ html, body {
 }
 
 .introduce_box.profile {
+  font-family: 'Noto Sans KR', sans-serif;
   width: auto;
   margin-left: 20px;
   float: left;
@@ -408,10 +421,10 @@ html, body {
 }
 
 .introduce_box.verticl_line {
-  width: 1.5px;
-  margin-top: 15px;
+  width: 10px;
+  margin-top: 10px;
   margin-left: 20px;
-  height: 200px;
+  height: 210px;
   background-color: grey;
   float: left;
   border: 0px;
