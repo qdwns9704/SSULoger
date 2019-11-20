@@ -1,17 +1,23 @@
 <!DOCTYPE html>
+<title>SSULoger - qdwns9704.github.io</title>
 <html>
-
 <head>
   {% include head.html %}
 </head>
 
-<body>
+<body class="{{ page.layout | append: '-template' }}">
+
   {% include header.html %}
+
   <div id="wrapper">
     {{ content }}
+
+    <div class="clearfix"></div>
+
   </div>
+
   {% include footer.html %}
+
   <script src="{{ site.asset_url }}/js/index.js"></script>
 </body>
-
 </html>
