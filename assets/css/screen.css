@@ -140,6 +140,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 #header {
   margin: 0;
   padding: 0;
+  margin-bottom: 5px;
   border-bottom: 1px solid #e6e6e6;
   background-color: #fff;
 }
@@ -147,7 +148,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 /*로고*/
 #logo {
   position: absolute;
-  top: 15px;
+  top: -5px; /*로고 이미지 높이 조절*/
   left: 30px;
   width: 123px;
   height: 60px;
@@ -181,8 +182,8 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 /*메뉴바*/
 nav {
   width: 100%;
-  position: relative;
-  top: 25px;
+  position: absolute;
+  top: 10px;
   left: 0px;
   text-align: center;
 }
@@ -193,7 +194,7 @@ nav a {
   text-transform: uppercase;
   text-decoration: none;
   text-emphasis-color: black;
-  color: #1e1e1e;
+  color: black;
   margin: 0 20px;
   font-size: 20px;
   letter-spacing: 1px;
@@ -207,7 +208,7 @@ nav a:before {
   position: absolute;
   width: 100%;
   height: 3px;
-  background: #1e1e1e;
+  background: black;
   top: 47%;
   animation: out 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
 }
@@ -937,6 +938,85 @@ body.page-template {
   width: 200px;
 }
 
+/* 컨트리뷰터 세팅*/
+.window_cont {
+  width: 100%;
+  height: 1500px;
+  background-color: #E7E7E7;
+}
+
+.title {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.title.big {
+  font-size: 15px;
+}
+
+.title.small {
+  font-size: 14px;
+}
+
+.content-container {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 12px;
+  position: relative;
+  left: 50%;
+  margin-left:-450px;
+  box-sizing: content-box;
+  width: 900px;
+  height: 1300px;
+  padding: 50px;
+  background-color: #E7E7E7;
+}
+
+.introduce_box {
+  font-family: 'Noto Sans KR', sans-serif;
+  width: auto;
+  height: 250px;
+  padding-top: 7.5px;
+  padding-left: 10px;
+  margin-bottom: 30px;
+  border-radius: 30px;
+  -moz-border-radius: 30px;
+  -khtml-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border: 2px solid grey;
+}
+
+.introduce_box.image {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  float: left;
+  border: 0px;
+}
+
+.introduce_box.profile {
+  font-family: 'Noto Sans KR', sans-serif;
+  width: auto;
+  margin-left: 20px;
+  float: left;
+  border: 0px solid black;
+}
+
+.introduce_box.content {
+  width: auto;
+  margin-left: 20px;
+  float: left;
+  border: 0px solid black;
+}
+
+.introduce_box.verticl_line {
+  width: 10px;
+  margin-top: 10px;
+  margin-left: 20px;
+  height: 210px;
+  background-color: grey;
+  float: left;
+  border: 0px;
+}
+
 
 *{
   margin:0;
@@ -1022,82 +1102,3 @@ body.page-template {
  #pos4:checked~.pos>label:nth-child(4){
    background:#666;
  }
-
-/* 컨트리뷰터 세팅*/
-.window_cont {
-  width: 100%;
-  height: 1500px;
-  background-color: #E7E7E7;
-}
-
-.title {
-  font-family: 'Noto Sans KR', sans-serif;
-}
-
-.title.big {
-  font-size: 15px;
-}
-
-.title.small {
-  font-size: 14px;
-}
-
-.content-container {
-  font-family: 'Noto Sans KR', sans-serif;
-  font-size: 12px;
-  position: relative;
-  left: 50%;
-  margin-left:-450px;
-  box-sizing: content-box;
-  width: 900px;
-  height: 1300px;
-  padding: 50px;
-  background-color: #E7E7E7;
-}
-
-.introduce_box {
-  font-family: 'Noto Sans KR', sans-serif;
-  width: auto;
-  height: 250px;
-  padding-top: 7.5px;
-  padding-left: 10px;
-  margin-bottom: 30px;
-  border-radius: 30px;
-  -moz-border-radius: 30px;
-  -khtml-border-radius: 30px;
-  -webkit-border-radius: 30px;
-  border: 2px solid grey;
-}
-
-.introduce_box.image {
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  float: left;
-  border: 0px;
-}
-
-.introduce_box.profile {
-  font-family: 'Noto Sans KR', sans-serif;
-  width: auto;
-  margin-left: 20px;
-  float: left;
-  border: 0px solid black;
-}
-
-.introduce_box.content {
-  width: auto;
-  margin-left: 20px;
-  float: left;
-  border: 0px solid black;
-}
-
-.introduce_box.verticl_line {
-  width: 10px;
-  margin-top: 10px;
-  margin-left: 20px;
-  height: 210px;
-  background-color: grey;
-  float: left;
-  border: 0px;
-}
