@@ -527,7 +527,7 @@ nav a:hover:before {
   height: 60px;
   margin: 0 auto;
   border-radius: 100%;
-  background: url(../images/pc/default_pic_s.png) no-repeat center;
+  /*background: url(../images/pc/default_pic_s.png) no-repeat center;*/
   background-size: cover;
 }
 
@@ -669,7 +669,7 @@ body.page-template #cover {
 }
 
 body.home-template #cover {
-  background-image: url(../images/default_blog_cover.jpg);
+  background-image: none/*url(../images/default_blog_cover.jpg)*/;
 }
 
 body.post-template #cover {
@@ -677,15 +677,15 @@ body.post-template #cover {
 }
 
 body.page-template #cover {
-  background-image: url(../images/default_page_cover.jpg);
+  background-image: none /*url(../images/default_page_cover.jpg)*/;
 }
 
 body.author-template #cover {
-  background-image: url(../images/default_author_cover.jpg);
+  background-image: none /* url(../images/default_author_cover.jpg)*/;
 }
 
 body.tag-template #cover {
-  background-image: url(../images/default_tag_cover.jpg);
+  background-image: none /*url(../images/default_tag_cover.jpg)*/;
 }
 
 body.home-template #cover p,
