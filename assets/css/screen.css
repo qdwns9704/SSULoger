@@ -300,6 +300,60 @@ html, body {
   position: relative;
 }
 
+/*돋보기 작대기*/
+.search>div:after {
+  content: "";
+  background: black;
+  width: 4px;
+  height: 20px;
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  transform: rotate(135deg);
+  box-shadow: 1px 0 #0091c2;
+}
+
+/*커서*/
+.search>div>input {
+  color: black;
+  font-size: 16px;
+  background: transparent;
+  /*돋보기*/
+  width: 10px;
+  height: 10px;
+  padding: 10px;
+  border: solid 3px black;
+  outline: none;
+  border-radius: 35px;
+  /*둥글기*/
+  box-shadow: 0 1px #0091c2;
+  transition: width 0.5s;
+  /*확장속도*/
+}
+
+/*확장됬을때 안에 글자 색깔*/
+.search>div>input::placeholder {
+  color: black;
+  opacity: 10;
+}
+
+.search>div>input::-ms-placeholder {
+  color: black;
+}
+
+.search>div>input::-ms-input-placeholder {
+  color: black
+    /*#efefef*/
+  ;
+}
+
+/*눌렀을때 검색창 길어지게하기*/
+.search>div>input:focus,
+.search>div>input:valid {
+  width: 200px;
+}
+
+
 /* home */
 /*
 +#cover-----------------------------------------+
@@ -890,59 +944,6 @@ body.page-template {}
 
 #post-content.page {
   border-bottom: none;
-}
-
-/*돋보기 작대기*/
-.search>div:after {
-  content: "";
-  background: black;
-  width: 4px;
-  height: 20px;
-  position: absolute;
-  top: 20px;
-  right: 0px;
-  transform: rotate(135deg);
-  box-shadow: 1px 0 #0091c2;
-}
-
-/*커서*/
-.search>div>input {
-  color: black;
-  font-size: 16px;
-  background: transparent;
-  /*돋보기*/
-  width: 10px;
-  height: 10px;
-  padding: 10px;
-  border: solid 3px black;
-  outline: none;
-  border-radius: 35px;
-  /*둥글기*/
-  box-shadow: 0 1px #0091c2;
-  transition: width 0.5s;
-  /*확장속도*/
-}
-
-/*확장됬을때 안에 글자 색깔*/
-.search>div>input::placeholder {
-  color: black;
-  opacity: 10;
-}
-
-.search>div>input::-ms-placeholder {
-  color: black;
-}
-
-.search>div>input::-ms-input-placeholder {
-  color: black
-    /*#efefef*/
-  ;
-}
-
-/*눌렀을때 검색창 길어지게하기*/
-.search>div>input:focus,
-.search>div>input:valid {
-  width: 200px;
 }
 
 /* 컨트리뷰터 세팅*/
