@@ -1,27 +1,14 @@
 ---
 layout: page
 ---
+<div id="navbar" class="container">
+    <h5>Lastest Posts</h5>
+</div>
 
-
-<div id= "content" class= "container">
-  <div id="home-content" role ="main">
-    <ul id="post-list">
-      {% for post in site.categories[page.category] %}
-      <a href="{{ post.url | absolute_url }}">
-        <h3 class="post-tile">{{ post.title }}</h3>
-        <p class="post-excerpt">{{ post.excerpt| strip_html | truncatewords: 75}}
-        </a>
-        <div class="post-meta">
-          {% assign author = site.authors | where: 'name', post.author | first %}
-          <a href="{{ site.baseurl }}/authors/{{ post.author }}">
-            <div class="author-image" {% if author.image %}style="background-image:url({{ author.image }});" {% endif %}>
-              <span class="sr-only">{{ author.name }}'s profile image</span>
-            </div>
-            <p class="author-name">{{ author.name }}</p>
-          </a>
-        </div>
-        {% endfor %}
-      </ul>
-      {% include pagination.html %}
-    </div>
-  </div>
+<ul id="post-list">
+  {% for post in site.categories[page.category] %}
+  {{paginator.posts}}
+  {% include item.html %}
+  {% endfor %}
+</ul>
+{% include pagination.html %}
