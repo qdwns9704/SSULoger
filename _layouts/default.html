@@ -4,10 +4,11 @@
 <head>
   {% include head.html %}
 </head>
-<a href="/search/"><img src="assets/images/icon/search.png" /></a>
+
 <body class="{{ page.layout | append: '-template' }}">
 
   {% include header.html %}
+  <a href="/search/"><img src="assets/images/icon/search.png" /></a>
   <div id="wrapper">
 
     {{ content }}
