@@ -140,8 +140,9 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 /****************************************
-            상단 네비게이션 바
+      Large Screen: 상단 네비게이션 바
  ****************************************/
+/* 헤더 공간 */
 #header {
   margin: 0;
   padding: 0;
@@ -149,7 +150,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   background-color: #fff;
 }
 
-/* 로고 */
+/* 블로그 로고 */
 #logo {
   position: absolute;
   top: 15px;
@@ -272,6 +273,93 @@ nav a:hover:before {
   position: relative;
 }
 
+/*돋보기 작대기*/
+.search>div:after {
+  content: "";
+  background: black;
+  width: 4px;
+  height: 20px;
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  transform: rotate(135deg);
+  box-shadow: 1px 0 #0091c2;
+}
+
+/*커서*/
+.search>div>input {
+  color: black;
+  font-size: 16px;
+  background: transparent;
+  /*돋보기*/
+  width: 10px;
+  height: 10px;
+  padding: 10px;
+  border: solid 3px black;
+  outline: none;
+  border-radius: 35px;
+  /*둥글기*/
+  box-shadow: 0 1px #0091c2;
+  transition: width 0.5s;
+  /*확장속도*/
+}
+
+/*확장됬을때 안에 글자 색깔*/
+.search>div>input::placeholder {
+  color: black;
+  opacity: 10;
+}
+
+.search>div>input::-ms-placeholder {
+  color: black;
+}
+
+.search>div>input::-ms-input-placeholder {
+  color: black
+    /*#efefef*/
+  ;
+}
+
+/*눌렀을때 검색창 길어지게하기*/
+.search>div>input:focus,
+.search>div>input:valid {
+  width: 200px;
+}
+
+/****************************************
+            Large Scren: 본문
+ ****************************************/
+#wrapper {
+  padding-bottom: 100px;
+  background-color: #f4f4f4;
+  overflow-x: scroll;
+  /* @@iolo for very long title/tags */
+}
+
+#content {
+  background-color: #fff;
+}
+
+#back-to-top {
+  display: none;
+  /* @@iolo: show/hide by js */
+  position: fixed;
+  width: 29px;
+  height: 29px;
+  right: 30px;
+  bottom: 20px;
+  z-index: 999;
+  background: url(../images/pc/icon_uarrow.png) no-repeat;
+  background-size: 29px 29px;
+}
+
+#back-to-top.static {
+  position: static;
+  float: right;
+  margin-top: 51px;
+  /* 51px = 100(content-footer-spacing) - 29(self height) - 20(bottom) */
+  margin-right: 30px;
+}
 
 /****************************************
               하단 네비게이션 바
@@ -301,230 +389,237 @@ nav a:hover:before {
               본문 네비게이션 바
  ****************************************/
 #navbar {
-    display: table;
-    width: 100%;
-    padding: 0;
-    font-size: 14px;
+  display: table;
+  width: 100%;
+  padding: 0;
+  font-size: 14px;
 }
 
-#navbar > * {
-    display: table-cell;
-    vertical-align: middle;
-    font-size: 14px;
+#navbar>* {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 14px;
 }
 
 #link-back {
-    padding-left: 17px; /* 17px = 10(spacing) + 7(icon width) */
-    background: url(../images/pc/icon_larrow.png) no-repeat left;
-    background-size: 7px 11px;
+  padding-left: 17px;
+  /* 17px = 10(spacing) + 7(icon width) */
+  background: url(../images/pc/icon_larrow.png) no-repeat left;
+  background-size: 7px 11px;
 }
 
 #shares {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: right;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
 }
 
-#shares > li {
-    list-style: none;
-    display: inline;
+#shares>li {
+  list-style: none;
+  display: inline;
 }
 
-#shares > li > * {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-left: 5px;
+#shares>li>* {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
 }
 
-#shares > li.talk {
-    display: none;
+#shares>li.talk {
+  display: none;
 }
 
 #kakao-link-btn {
-    background: url(../images/pc/share_talk.png) no-repeat;
-    background-size: 20px 20px;
+  background: url(../images/pc/share_talk.png) no-repeat;
+  background-size: 20px 20px;
 }
 
 #share-kakaostory {
-    background: url(../images/pc/share_story.png) no-repeat;
-    background-size: 20px 20px;
+  background: url(../images/pc/share_story.png) no-repeat;
+  background-size: 20px 20px;
 }
 
 #share-facebook {
-    background: url(../images/pc/share_face.png) no-repeat;
-    background-size: 20px 20px;
+  background: url(../images/pc/share_face.png) no-repeat;
+  background-size: 20px 20px;
 }
 
 #share-twitter {
-    background: url(../images/pc/share_twit.png) no-repeat;
-    background-size: 20px 20px;
+  background: url(../images/pc/share_twit.png) no-repeat;
+  background-size: 20px 20px;
 }
 
 #share-google {
-    background: url(../images/pc/share_goo.png) no-repeat;
-    background-size: 20px 20px;
+  background: url(../images/pc/share_goo.png) no-repeat;
+  background-size: 20px 20px;
 }
 
 #header,
 #cover,
 #navbar,
 #footer {
-    font-family: 'Noto Sans KR', sans-serif !important;
+  font-family: 'Noto Sans KR', sans-serif !important;
 }
 
 /****************************************
-                 포스트 목록
+          Large Screen: 포스트 목록
  ****************************************/
 #post-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 #post-list .post-item {
-    color: #000;
-    list-style: none;
-    position: relative;
-    margin: 0 40px;
-    padding: 50px 0 50px 40px;
-    border-bottom: 1px solid #e6e6e6;
+  color: #000;
+  list-style: none;
+  position: relative;
+  margin: 0 40px;
+  padding: 50px 0 50px 40px;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 #post-list .post-title,
 #post-list .post-excerpt,
 #post-list .post-tags {
-    margin: 0 160px 0 0; /* 160px = 60(spacing from .post-author) + 140(.post-author width) - 40(padding-left) */
-    max-width: 620px;
+  margin: 0 160px 0 0;
+  /* 160px = 60(spacing from .post-author) + 140(.post-author width) - 40(padding-left) */
+  max-width: 620px;
 }
 
 #post-list .post-title {
-    font-size: 26px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+  font-size: 26px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 #post-list .post-excerpt {
-    margin-top: 22px;
-    font-size: 14px;
-    line-height: 24px; /* 24px = 14(font-size) + 10(line-spacing) */
-    display: block;
-    max-height: 48px; /* 2 lines */
-    display: -webkit-box; /* multi-line ellipsis */
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    text-overflow: ellipsis;
-    word-wrap: break-word;
-    overflow: hidden;
+  margin-top: 22px;
+  font-size: 14px;
+  line-height: 24px;
+  /* 24px = 14(font-size) + 10(line-spacing) */
+  display: block;
+  max-height: 48px;
+  /* 2 lines */
+  display: -webkit-box;
+  /* multi-line ellipsis */
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
 }
 
 #post-list .post-meta {
-    position: absolute;
-    top: 63px;
-    right: 0;
-    width: 140px;
+  position: absolute;
+  top: 63px;
+  right: 0;
+  width: 140px;
 }
 
 #post-list .author-image {
-    display: block;
-    width: 60px;
-    height: 60px;
-    margin: 0 auto;
-    border-radius: 100%;
-    background: url(../images/pc/default_pic_s.png) no-repeat center;
-    background-size: cover;
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  border-radius: 100%;
+  background: url(../images/pc/default_pic_s.png) no-repeat center;
+  background-size: cover;
 }
 
 #post-list .author-name {
-    margin: 12px 0 0 0;
-    font-size: 14px;
-    color: #1e1e1e;
-    text-align: center;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+  margin: 12px 0 0 0;
+  font-size: 14px;
+  color: #1e1e1e;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 #post-list .post-date {
-    margin: 6px 0 0 0;
-    font-size: 12px;
-    text-align: center;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+  margin: 6px 0 0 0;
+  font-size: 12px;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 #post-list .post-tags {
-    margin-top: 18px;
+  margin-top: 18px;
 }
 
 /****************************************
                    태그
  ****************************************/
 a.tag {
-    display: inline-block;
-    margin: 0 5px 5px 0;
-    padding: 0 10px;
-    border: 1px solid #e6e6e6;
-    border-radius: 4px;
-    vertical-align: middle;
-    background-color: #fafafa;
-    color: #1e1e1e;
-    font-size: 12px;
-    line-height: 24px; /* 24px = 26(height) - 2(border) */
+  display: inline-block;
+  margin: 0 5px 5px 0;
+  padding: 0 10px;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  vertical-align: middle;
+  background-color: #fafafa;
+  color: #1e1e1e;
+  font-size: 12px;
+  line-height: 24px;
+  /* 24px = 26(height) - 2(border) */
 }
 
 a.tag:active,
 a.tag:hover {
-    background-color: #e6e6e6;
+  background-color: #e6e6e6;
 }
 
 /****************************************
                 페이지 번호
  ****************************************/
 #pagination {
-    margin: 0;
-    padding: 33px 0;
-    text-align: center;
+  margin: 0;
+  padding: 33px 0;
+  text-align: center;
 }
 
-#pagination > li {
-    list-style: none;
-    display: inline-block;
-    height: 20px;
-    width: 20px;
-    color: #1e1e1e;
-    font-size: 14px;
-    line-height: 18px; /* 18px = 20(height) - 2(border) */
-    vertical-align: middle;
+#pagination>li {
+  list-style: none;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  color: #1e1e1e;
+  font-size: 14px;
+  line-height: 18px;
+  /* 18px = 20(height) - 2(border) */
+  vertical-align: middle;
 }
 
-#pagination > li + li {
-    margin-left: 10px;
+#pagination>li+li {
+  margin-left: 10px;
 }
 
-#pagination > li.active, #pagination > li:hover {
-    background-color: #e6e6e6;
-    border-radius: 4px;
+#pagination>li.active, #pagination>li:hover {
+  background-color: #e6e6e6;
+  border-radius: 4px;
 }
 
-#pagination > li > a {
-    color: #1e1e1e;
-    width: 100%;
-    height: 100%;
-    display:block;
+#pagination>li>a {
+  color: #1e1e1e;
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 #page-prev {
-    background: url(../images/pc/icon_pre.png) no-repeat center;
-    background-size: 6px 11px;
+  background: url(../images/pc/icon_pre.png) no-repeat center;
+  background-size: 6px 11px;
 }
 
 #page-next {
-    background: url(../images/pc/icon_next.png) no-repeat center;
-    background-size: 6px 11px;
+  background: url(../images/pc/icon_next.png) no-repeat center;
+  background-size: 6px 11px;
 }
 
 /****************************************
@@ -764,14 +859,16 @@ a.tag:hover {
   background-size: 6px 11px;
 }
 
-/* post */
-/*
+/****************************************
+               Layout: Post
 +#navbar----------------------------------------+
 |                                               |
 +-----------------------------------------------+
+
 +#cover-----------------------------------------+
 |                                               |
 +-----------------------------------------------+
+
 +#content---------------------------------------+
 |                                               |
 |+#post-content--------------------------------+|
@@ -783,10 +880,12 @@ a.tag:hover {
 |+---------------------------------------------+|
 |                                               |
 +-----------------------------------------------+
+
 +#post-links------------------------------------+
 |     #post-prev                 #post-next     |
 +-----------------------------------------------+
-*/
+
+****************************************/
 body.post-template {}
 
 /* @@iolo not vertical center!
@@ -946,7 +1045,6 @@ body.tag-template #navbar {
   text-align: left;
 }
 
-/* @@iolo */
 #post-footer {
   position: relative;
   height: 120px;
@@ -982,6 +1080,19 @@ body.tag-template #navbar {
   /* 75px = (#author-name left) */
   margin: 0;
   font-size: 12px;
+}
+
+#disqus_thread {
+  position: relative;
+  margin: 0 80px;
+  padding-bottom: 80px
+}
+
+@media only screen and (max-width: 720px) {
+  #disqus_thread {
+    margin: 0 15px;
+    padding-bottom: 15px
+  }
 }
 
 #post-more {
@@ -1052,7 +1163,6 @@ body.tag-template #navbar {
   color: #fff;
 }
 
-/* @@iolo */
 #lightbox {
   display: none;
   z-index: 999;
@@ -1121,60 +1231,9 @@ body.page-template {}
   border-bottom: none;
 }
 
-/*돋보기 작대기*/
-.search>div:after {
-  content: "";
-  background: black;
-  width: 4px;
-  height: 20px;
-  position: absolute;
-  top: 20px;
-  right: 0px;
-  transform: rotate(135deg);
-  box-shadow: 1px 0 #0091c2;
-}
-
-/*커서*/
-.search>div>input {
-  color: black;
-  font-size: 16px;
-  background: transparent;
-  /*돋보기*/
-  width: 10px;
-  height: 10px;
-  padding: 10px;
-  border: solid 3px black;
-  outline: none;
-  border-radius: 35px;
-  /*둥글기*/
-  box-shadow: 0 1px #0091c2;
-  transition: width 0.5s;
-  /*확장속도*/
-}
-
-/*확장됬을때 안에 글자 색깔*/
-.search>div>input::placeholder {
-  color: black;
-  opacity: 10;
-}
-
-.search>div>input::-ms-placeholder {
-  color: black;
-}
-
-.search>div>input::-ms-input-placeholder {
-  color: black
-    /*#efefef*/
-  ;
-}
-
-/*눌렀을때 검색창 길어지게하기*/
-.search>div>input:focus,
-.search>div>input:valid {
-  width: 200px;
-}
-
-/* 컨트리뷰터 세팅*/
+/****************************************
+                컨트리뷰터
+ ****************************************/
 .window_cont {
   width: 100%;
   height: 1500px;
@@ -1258,7 +1317,9 @@ body.page-template {}
   border: 0px;
 }
 
-/* 오픈소스 */
+/****************************************
+                 오픈소스
+ ****************************************/
 .window_cont.open {
   height: 800px;
 }

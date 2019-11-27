@@ -3,43 +3,6 @@
     'use strict';
 
     $(function () {
-        // by default, blog menu is active unless page
-        var activeMenu = $('#menu > li.active');
-        if (activeMenu.length === 0) {
-            activeMenu.removeClass('active');
-            // 문서 내용에 클래스가 page이면
-            if ($(document.body).hasClass('page')) {
-                $('#menu > li:nth-child(2)').addClass('active');
-            } else {
-                $('#menu > li:first-child').addClass('active');
-            }
-        }
-
-        // 메뉴: 토글 버튼 기능
-        $('#menu-toggle').click(function (e) {
-            e.stopPropagation();
-            e.preventDefault();
-            if ($('#menu').is(':visible')) {
-                $('#menu').hide();
-            } else {
-                $('#search').hide();
-                $('#menu').show();
-            }
-        });
-
-        // 검색: 토글 버튼 기능
-        $('#search-toggle').click(function (e) {
-            e.stopPropagation();
-            e.preventDefault();
-            if ($('#search').is(':visible')) {
-                $('#search').hide();
-            } else {
-                $('#menu').hide();
-                $('#search').show();
-            }
-        });
-
-        // 스크롤: 상단으로 올라가기 버튼 표시 기능
         $(window).scroll(function () {
             var viewportTop = $(window).scrollTop();
             if (viewportTop) {
@@ -57,4 +20,19 @@
                 $('#back-to-top').hide();
             }
         });
+
+        // turn img alt into caption
+        $('#post-content > p > img[alt]').replaceWith(function () {
+            return '<figure>'
+                + '<a href="' + $(this).attr('src') + '" class="mg-link">'
+                + '<img src="' + $(this).attr('src') + '"/></a>'
+                + '<figcaption class="caption">' + $(this).attr('alt') + '</figcaption>'
+                + '</figure>';
+        });
+        // and connect magnific popup image viewer
+        $('#post-content .mg-link').magnificPopup({
+            type: 'image',
+            closeOnContentClick: true
+        });
+    });
 }(window, window.document, window.jQuery));
