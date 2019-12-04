@@ -213,7 +213,7 @@ ul, li {
     height: 33px;
     border-radius: 17px;
     border: 1px solid #e6e6e6;
-    padding: 0 30px 0 15px; /* 30px(right-padding) = 15(right-padding) + 10(icon-width) + 5(@@iolo) */
+    padding: 0 30px 0 15px; /* 30px(right-padding) = 15(right-padding) + 10(icon-width) + 5 */
     font-size: 14px;
     color: #505050;
     background: url(../images/pc/icon_search.png) no-repeat right;
@@ -261,7 +261,7 @@ ul, li {
 #wrapper {
     padding-bottom: 100px;
     background-color: #f4f4f4;
-    overflow-x: scroll; /* @@iolo for very long title/tags */
+    overflow-x: scroll; /* for very long title/tags */
 }
 
 #content {
@@ -288,7 +288,7 @@ ul, li {
 }
 
 #cover h1, #cover p {
-    width: 80%; /* @@iolo */
+    width: 80%;
     max-width: 780px;
     margin: 0 auto;
     color: #fff;
@@ -304,7 +304,7 @@ ul, li {
 
 #cover p {
     font-size: 14px;
-    line-height: 22px; /* 22px = 14(font-size) + 8(line-spacing) @@iolo */
+    line-height: 22px; /* 22px = 14(font-size) + 8(line-spacing) */
 }
 
 #cover h1 + p {
@@ -319,7 +319,6 @@ ul, li {
     color: #fff;
 }
 
-/* @@iolo */
 #cover cite {
     display: block;
     position: absolute;
@@ -338,7 +337,7 @@ ul, li {
 
 #back-to-top {
   display: none;
-  /* @@iolo: show/hide by js */
+  /* show/hide by js */
   position: fixed;
   width: 29px;
   height: 29px;
@@ -855,7 +854,7 @@ body.tag-template #navbar {
 
 #post-content ul,
 #post-content ol {
-  padding-left: 28px;
+  /*padding-left: 28px;*/
 }
 
 #post-content blockquote {
@@ -897,7 +896,7 @@ body.tag-template #navbar {
 
 #post-content figure figcaption {
   margin: 0;
-  /*margin-top: 10px; @@iolo */
+  /*margin-top: 10px;*/
   text-align: center;
   font-size: 14px;
   line-height: 14px;
@@ -1008,7 +1007,7 @@ body.tag-template #navbar {
 
 #post-links h3 {
   width: 82%;
-  /* @@iolo 80% = 390 / 470 * 100 */
+  /* 80% = 390 / 470 * 100 */
   max-width: 390px;
   margin: 0 auto;
   padding: 0;
@@ -1073,7 +1072,6 @@ body.author-template #cover h1,
 body.author-template #cover p {
   max-width: 606px;
   width: 100%;
-  /* @@iolo */
   margin-left: 254px;
   /* 254px = 80(padding-left) + 144(#cover-author-image width) + 30(spacing) */
   text-align: left;
@@ -1314,7 +1312,7 @@ body.page-template {}
     }
 
     #menu {
-        display: none; /* @@iolo: show/hide by js */
+        display: none; /* show/hide by js */
         position: absolute;
         top: 50px;
         left: 0;
@@ -1340,7 +1338,7 @@ body.page-template {}
     }
 
     #search {
-        display: none; /* @@iolo: show/hide by js */
+        display: none; /* show/hide by js */
         position: absolute;
         top: 50px;
         left: 0;
@@ -1544,7 +1542,7 @@ body.page-template {}
     a.tag {
         height: 20px;
         margin: 0 8px 8px 0;
-        padding: 0 5px; /* @@iolo */
+        padding: 0 5px;
         border-radius: 2px;
         line-height: 18px; /* 18px = 20(height) - 2(border) */
     }
@@ -1658,7 +1656,7 @@ body.page-template {}
     body.author-template #cover h1,
     body.author-template #cover p {
         max-width: 193px; /* 386/2 */
-        width: 100%; /* @@iolo */
+        width: 100%;
         margin-left: 102px; /* 254px = 15(padding-left) + 72(#cover-author-image width) + 15(spacing) */
         text-align: left;
     }
@@ -1690,7 +1688,7 @@ body.page-template {}
 
 @media (-webkit-min-device-pixel-ratio: 2) {
     body {
-        font-weight: 200; /* @@iolo 200 for retina only! */
+        font-weight: 200; /* 200 for retina only! */
     }
 
     #logo {
@@ -1780,7 +1778,7 @@ body.page-template {}
 
 @media (-webkit-min-device-pixel-ratio: 3) {
     body {
-        font-weight: 200; /* @@iolo 200 for retina only! */
+        font-weight: 200; /* 200 for retina only! */
     }
 
     #logo {
