@@ -320,6 +320,7 @@ nav a:hover:before {
 #wrapper {
   background-color: #f4f4f4;
   overflow-x: scroll;
+  min-height: 865px;
   /* @@iolo for very long title/tags */
 }
 
@@ -432,7 +433,7 @@ nav a:hover:before {
   border-top: 1px solid #d4d4d4;
   background: #fff;
   color: #505050;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 #copyright {
@@ -1306,7 +1307,7 @@ body.page-template {}
   margin-left: -600px;
   box-sizing: content-box;
   width: 1200px;
-  height: 815px;
+  height: 100%;
 }
 
 .opensource_image {
