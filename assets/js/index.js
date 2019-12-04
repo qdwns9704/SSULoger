@@ -3,6 +3,39 @@
     'use strict';
 
     $(function () {
+        // by default, blog menu is active unless page
+        var activeMenu = $('#menu > li.active');
+        if (activeMenu.length === 0) {
+            activeMenu.removeClass('active');
+            if ($(document.body).hasClass('page')) {
+                $('#menu > li:nth-child(2)').addClass('active');
+            } else {
+                $('#menu > li:first-child').addClass('active');
+            }
+        }
+
+        $('#menu-toggle').click(function (e) {
+            e.stopPropagation();
+            e.preventDefault();
+            if ($('#menu').is(':visible')) {
+                $('#menu').hide();
+            } else {
+                $('#search').hide();
+                $('#menu').show();
+            }
+        });
+
+        $('#search-toggle').click(function (e) {
+            e.stopPropagation();
+            e.preventDefault();
+            if ($('#search').is(':visible')) {
+                $('#search').hide();
+            } else {
+                $('#menu').hide();
+                $('#search').show();
+            }
+        });
+
         $(window).scroll(function () {
             var viewportTop = $(window).scrollTop();
             if (viewportTop) {
@@ -20,6 +53,23 @@
                 $('#back-to-top').hide();
             }
         });
+
+        // show/hide cover videos by browser
+        var coverVideos = $('#cover video');
+        if (/Mobi/.test(window.navigator.userAgent)) {
+            coverVideos.remove();
+        } else {
+            coverVideos.click(function (e) {
+                var v = e.target;
+                if (v.paused) {
+                    v.play();
+                } else {
+                    v.pause();
+                }
+            }).each(function (i, v) {
+                v.play();
+            }).show();
+        }
 
         // turn img alt into caption
         $('#post-content > p > img[alt]').replaceWith(function () {

@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Jekyll 설치 관련 문제점"
-author: 박민준
-date:   2019-12-04 22:02:28
+author: ss_choi
+date:   2019-12-03 22:02:28
 tags: [solve, sixth, markdown, install]
-categories: Solve
+categories: solve
 ---
 # 지킬 설치의 문제
 지킬이 기반으로 하고 있는 프로그램은 Ruby Gem 이다. 이 프로그램을 리눅스 환경에서 설치 하던 중 에러가 발생하였다. 그리고 이에 대한 해결 방법을 찾아 보았다.
