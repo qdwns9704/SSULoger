@@ -4,7 +4,7 @@ title: "Jekyll 환경설정 문제점"
 author: 박민준
 date:   2019-12-04 22:32:30
 tags: [solve, seventh, markdown, setting]
-categories: solve
+categories: Solve
 ---
 # 환경설정 관련 문제점
 **환경설정** 이 충돌하는 경우의 우선순위는 다음과 같다.

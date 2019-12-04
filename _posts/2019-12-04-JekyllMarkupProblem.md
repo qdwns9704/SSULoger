@@ -4,7 +4,7 @@ title: "Jekyll 마크업 문제점"
 author: 박민준
 date:   2019-12-04 22:48:40
 tags: [solve, eighth, markdown, markup]
-categories: solve
+categories: Solve
 ---
 # 마크업 관련 문제점
 Jekyll에 사용된 마크업 엔진들의 종류는 다양하고, 각 엔진에는 저마다의 특이사항이 있을 수 있다. 동일한 문제를 겪고 있는 이들에게 도움이 될 만한 정보를 여기에 모아 두었다.
