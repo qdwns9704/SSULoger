@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Jekyll 설치 관련 문제점"
-author: 박민준
-date:   2019-12-04 22:02:28
+author: ss_choi
+date:   2019-12-03 22:02:28
 tags: [solve, sixth, markdown, install]
 categories: solve
 ---

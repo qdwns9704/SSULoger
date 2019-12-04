@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Jekyll 환경설정 문제점"
-author: 박민준
-date:   2019-12-04 22:32:30
+author: ss_choi
+date:   2019-12-03 22:32:30
 tags: [solve, seventh, markdown, setting]
 categories: solve
 ---

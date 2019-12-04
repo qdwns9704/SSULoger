@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "윈도우 환경에서 git 사용하기 - 1"
-author: 박민준
-date:   2019-12-04 17:39:31
+author: ss_choi
+date:   2019-12-03 17:39:31
 tags: [project, third, markdown, GitBash]
 categories: project
 ---

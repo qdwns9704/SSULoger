@@ -1,8 +1,9 @@
 ---
-layout: home
+layout: page
 ---
 <ul id="post-list">
-  {% for post in paginator.posts %}
+  {% for post in site.categories[page.category] %}
+  {{paginator.posts}}
   {% include item.html %}
   {% endfor %}
 </ul>
