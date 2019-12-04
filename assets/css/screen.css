@@ -1275,6 +1275,31 @@ body.page-template {}
     margin: 0 15px;
     padding-bottom: 15px
   }
+
+  #slide .title {
+    text-align: center;
+    position: absolute;
+    bottom: 45%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  #slide h1 {
+    color: #fff;
+    font-size: 24px !important;
+    /* 29px = 24(font-size) + 5(line-spacing) */
+  }
+
+  #slide p {
+    color: #fff;
+    font-size: 12px !important;
+  }
+
+  #slide h1+p {
+    padding-top: 10px !important;
+  }
+
 }
 
 @media only screen and (min-width: 720px) {
@@ -1825,30 +1850,6 @@ body.page-template {}
 
   #cover-author-image {
     background-image: url(../images/mo/default_pic_l@3x.png);
-  }
-
-  #slide .title {
-    text-align: center;
-    position: absolute;
-    bottom: 45%;
-    left: 0;
-    width: 100%;
-    text-align: center;
-  }
-
-  #slide h1 {
-    color: #fff;
-    font-size: 24px !important;
-    /* 29px = 24(font-size) + 5(line-spacing) */
-  }
-
-  #slide p {
-    color: #fff;
-    font-size: 12px !important;
-  }
-
-  #slide h1+p {
-    padding-top: 10px !important;
   }
 }
 
