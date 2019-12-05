@@ -8,10 +8,10 @@ layout: default
   <input type="radio" name="pos" id="pos3">
   <input type="radio" name="pos" id="pos4">
   <ul>
-    <li><img src="../assets/images/slide1.png"></li>
-    <li><img src="../assets/images/slide2.png"></li>
-    <li><img src=" ../assets/images/slide3.png"></li>
-    <li><img src="../assets/images/slide4.png"></li>
+    <li><img src="{{ base_path }}/assets/images/slide1.png"></li>
+    <li><img src="{{ base_path }}/assets/images/slide2.png"></li>
+    <li><img src="{{ base_path }}/assets/images/slide3.png"></li>
+    <li><img src="{{ base_path }}/assets/images/slide4.png"></li>
   </ul>
   <div class="title">
     <h1>{{ site.title }}</h1>
@@ -27,7 +27,7 @@ layout: default
 
 <!-- 본문 네비게이션 -->
 <div id="navbar" class="container">
-  <h5>Featured Posts</h5>
+  <h2>Featured Posts</h2>
 </div>
 <div id="content" class="container">
   <div id="home-content" role="main">
