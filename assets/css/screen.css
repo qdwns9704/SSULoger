@@ -155,8 +155,8 @@ ul, li {
   height: 60px;
   margin: 0 0;
   padding: 0;
-  background: url(../images/logo.png) no-repeat center;
-  background-size: 123px 26px;
+  background: url(../images/new_logo.png) no-repeat center;
+  background-size: 123px 35px;
 }
 
 #menu {
@@ -268,7 +268,7 @@ font-size: 20px;
   /* 115px = 160(width) - 15(padding-left) - 30(padding-right) */
   height: 33px;
   border-radius: 17px;
-  border: 1px solid #e6e6e6;
+  border: 2px solid black;
   padding: 0 30px 0 15px;
   /* 30px(right-padding) = 15(right-padding) + 10(icon-width) + 5 */
   font-size: 14px;
@@ -1414,7 +1414,7 @@ body.page-template {}
     top: 0;
     height: 48px;
     margin: 0 auto;
-    background-image: url(../images/logo.png);
+    background-image: url(../images/new_logo.png);
     background-size: 99px 21px;
   }
 
@@ -1826,7 +1826,7 @@ body.page-template {}
   }
 
   #logo {
-    background-image: url(../images/logo.png);
+    background-image: url(../images/new_logo.png);
   }
 
   #menu-toggle {
@@ -1916,7 +1916,7 @@ body.page-template {}
   }
 
   #logo {
-    background-image: url(../images/logo.png);
+    background-image: url(../images/new_logo.png);
   }
 
   #menu-toggle {
