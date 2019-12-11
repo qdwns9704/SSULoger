@@ -25,6 +25,12 @@ h6 {
   font-weight: 400;
   color: #1e1e1e;
 }
+h7{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  color:#1e1e1e;
+  text-align: center;
+}
 
 pre,
 code,
@@ -865,6 +871,7 @@ body.page-template #navbar {
   padding-top: 26px;
   /* 60px(height) = 26 + 14 + 20 */
   padding-bottom: 20px;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 /***************************** Post *****************************/
