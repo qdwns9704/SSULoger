@@ -3,7 +3,7 @@ layout: post
 title:  "Markdown 문서 작업 환경"
 author: 박민준
 date:   2019-11-27 20:32:40
-tags: [project, second, markdown]
+tags: [project, markdown]
 categories: project
 ---
 # Markdown 문서 작업 환경

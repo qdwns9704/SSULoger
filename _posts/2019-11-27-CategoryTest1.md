@@ -2,6 +2,7 @@
 layout: post
 title:  "테스트 포스트 1번(Solve)"
 date:   2019-11-27 21:57:53 +0900
+tags: [test]
 categories: solve
 ---
 # 테스트용 포스트 1번

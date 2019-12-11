@@ -3,7 +3,7 @@ layout: post
 title: "Jekyll 마크업 문제점"
 author: 박민준
 date:   2019-12-04 22:48:40
-tags: [solve, eighth, markdown, markup]
+tags: [solve, markdown, markup]
 categories: solve
 ---
 # 마크업 관련 문제점
