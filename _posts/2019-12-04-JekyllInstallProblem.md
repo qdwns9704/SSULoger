@@ -3,7 +3,7 @@ layout: post
 title: "Jekyll 설치 관련 문제점"
 author: ss_choi
 date:   2019-12-03 22:02:28
-tags: [solve, sixth, markdown, install]
+tags: [solve, markdown, install]
 categories: solve
 ---
 # 지킬 설치의 문제
