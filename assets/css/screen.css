@@ -842,12 +842,12 @@ body.page-template #cover {
 }
 
 body.author-template #cover {
-  background-image: none ;//url(../images/default_author_cover.jpg);
+  background-image: url(../images/back_img1.jpg);
   ;
 }
 
 body.tag-template #cover {
-  background-image: none; // url(../images/default_tag_cover.jpg);
+  background-image: url(../images/back_img4.jpg);
   ;
 }
 
