@@ -25,7 +25,12 @@ h6 {
   font-weight: 400;
   color: #1e1e1e;
 }
-
+h7{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  color:#1e1e1e;
+  text-align: center;
+}
 pre,
 code,
 tt,
@@ -828,7 +833,7 @@ body.home-template #cover {
 }
 
 body.post-template #cover {
-  background-image: none;// url(../images/default_post_cover.jpg);
+  background-image: url(../images/back_img3.jpg);
 }
 
 body.page-template #cover {
@@ -837,12 +842,12 @@ body.page-template #cover {
 }
 
 body.author-template #cover {
-  background-image: none ;//url(../images/default_author_cover.jpg);
+  background-image: url(../images/back_img1.jpg);
   ;
 }
 
 body.tag-template #cover {
-  background-image: none; // url(../images/default_tag_cover.jpg);
+  background-image: url(../images/back_img4.jpg);
   ;
 }
 
@@ -865,6 +870,7 @@ body.page-template #navbar {
   padding-top: 26px;
   /* 60px(height) = 26 + 14 + 20 */
   padding-bottom: 20px;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 /***************************** Post *****************************/
