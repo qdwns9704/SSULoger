@@ -3,14 +3,14 @@ layout: post
 title: "Jekyll 운영상 문제점"
 author: 박민준
 date:   2019-12-04 21:32:40
-tags: [solve, fifth, markdown, production]
+tags: [solve, markdown, production]
 categories: solve
 ---
 
-\#버전에 따른 문제점 발생
+# 버전에 따른 문제점 발생
 현재 프로젝트에서 사용하는 Jekyll의 버전은 v3.8.1이다. 하지만 v3.2.0버전 이상부터는 운영 환경을 구성할 때 파일이 제대로 생성되지 않는 버그가 발생한다. 이를 해결하기 위한 방법을 찾아보았다.
 
-\##빌드 시점에 Jekyll 환경변수 지정하기
+## 빌드 시점에 Jekyll 환경변수 지정하기
 `build` (혹은 `serve`)파라미터로, Jekyll환경 변수와 그 값을 설정 할 수 있다. 이 환경변수는 빌드 시에 사이트의 모든 조건문에서 사용된다.
 예를들어 이러한 조건문이 있다고 하자.
 <code>{% if jekyll.environment == "production" %}
