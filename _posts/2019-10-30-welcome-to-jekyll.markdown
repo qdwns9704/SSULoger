@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
-author: ss_choi
+author: mj_park
 date:   2019-10-30 19:23:18 +0900
 tags: [tag, test, tagtest]
 ---

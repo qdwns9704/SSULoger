@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Jekyll 설치 관련 문제점"
-author: ss_choi
+author: mj_park
 date:   2019-12-03 22:02:28
 tags: [solve, markdown, install]
 categories: solve
