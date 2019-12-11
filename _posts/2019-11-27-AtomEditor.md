@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Markdown 문서 작업 환경"
-author: 박민준
+author: dg_kim
 date:   2019-11-27 20:32:40
 tags: [project, markdown]
 categories: project
