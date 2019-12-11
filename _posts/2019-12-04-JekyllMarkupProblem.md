@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Jekyll 마크업 문제점"
-author: bj_kim
+author: 박민준
 date:   2019-12-04 22:48:40
 tags: [solve, markdown, markup]
 categories: solve

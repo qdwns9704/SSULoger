@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "윈도우 환경에서 git 사용하기 - 2"
-author: sy_kim
+author: ss_choi
 date:   2019-12-03 22:32:40
 tags: [project, markdown, GitKraken]
 categories: project
