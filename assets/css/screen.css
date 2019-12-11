@@ -334,9 +334,9 @@ ul, li {
 #cover {
   display: table;
   width: 100%;
-  height: 310px;
+  height: 390px;
   padding: 0;
-  background: no-repeat center;
+  background: url(../images/back_img1.jpg) no-repeat center;
   background-size: cover;
 }
 
@@ -820,29 +820,29 @@ body.home-template {}
 body.home-template #cover,
 body.archive-template #cover,
 body.page-template #cover {
-  height: 310px;
+  height: 390px;
 }
 
 body.home-template #cover {
-  background-image: none url(../images/default_blog_cover.jpg);
+  background-image: none; //url(../images/default_blog_cover.jpg)
 }
 
 body.post-template #cover {
-  background-image: url(../images/default_post_cover.jpg);
+  background-image: none;// url(../images/default_post_cover.jpg);
 }
 
 body.page-template #cover {
-  background-image: none url(../images/default_page_cover.jpg);
+  background-image: url(../images/back_img2.jpg);
   ;
 }
 
 body.author-template #cover {
-  background-image: none url(../images/default_author_cover.jpg);
+  background-image: none ;//url(../images/default_author_cover.jpg);
   ;
 }
 
 body.tag-template #cover {
-  background-image: none url(../images/default_tag_cover.jpg);
+  background-image: none; // url(../images/default_tag_cover.jpg);
   ;
 }
 
