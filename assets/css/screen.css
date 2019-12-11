@@ -31,7 +31,6 @@ h7{
   color:#1e1e1e;
   text-align: center;
 }
-
 pre,
 code,
 tt,
@@ -834,7 +833,7 @@ body.home-template #cover {
 }
 
 body.post-template #cover {
-  background-image: none;// url(../images/default_post_cover.jpg);
+  background-image: url(../images/back_img3.jpg);
 }
 
 body.page-template #cover {
@@ -843,12 +842,12 @@ body.page-template #cover {
 }
 
 body.author-template #cover {
-  background-image: none ;//url(../images/default_author_cover.jpg);
+  background-image: url(../images/back_img1.jpg);
   ;
 }
 
 body.tag-template #cover {
-  background-image: none; // url(../images/default_tag_cover.jpg);
+  background-image: url(../images/back_img4.jpg);
   ;
 }
 
@@ -886,7 +885,7 @@ body.tag-template #cover h1 {
 body.post-template #navbar,
 body.author-template #navbar,
 body.tag-template #navbar {
-  padding-top: 10px;
+  padding-top: 40px;
   /* 70px(height) = 40(padding-top) + 20(share icon height) + 10(padding-bottom) */
   padding-bottom: 10px;
 }
@@ -1211,7 +1210,7 @@ body.page-template {}
 
 .title {
   font-family: 'Noto Sans KR', sans-serif;
-  font-weight: 550;
+  font-weight: 500;
   font-size: 14px;
   color: #585858;
 }
