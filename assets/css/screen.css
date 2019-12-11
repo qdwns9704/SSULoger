@@ -885,7 +885,7 @@ body.tag-template #cover h1 {
 body.post-template #navbar,
 body.author-template #navbar,
 body.tag-template #navbar {
-  padding-top: 40px;
+  padding-top: 10px;
   /* 70px(height) = 40(padding-top) + 20(share icon height) + 10(padding-bottom) */
   padding-bottom: 10px;
 }
