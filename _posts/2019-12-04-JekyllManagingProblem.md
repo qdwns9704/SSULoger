@@ -13,9 +13,9 @@ categories: solve
 ## 빌드 시점에 Jekyll 환경변수 지정하기
 `build` (혹은 `serve`)파라미터로, Jekyll환경 변수와 그 값을 설정 할 수 있다. 이 환경변수는 빌드 시에 사이트의 모든 조건문에서 사용된다.
 예를들어 이러한 조건문이 있다고 하자.
-`{% 조건 jekyll.environment == "production" %}`
-`{% include disqus.html %}`
-`{% 조건종료 %}`
+` 조건 jekyll.environment == "production" `
+` include disqus.html `
+` 조건종료 `
 Jekyll 사이트를 빌드할 때, 다음과 같이 빌드 명령에 환경변수 `production` 을 정의하지 않으면 조건문 안에 들어있는 코드는 실행되지 않는다.
 `JEKYLL_ENV=production jekyll build`
 환경변수 값을 설정함으로써 특정 환경에서만 사용되는 컨텐츠를 만들 수 있다.
