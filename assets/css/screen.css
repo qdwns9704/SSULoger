@@ -209,7 +209,7 @@ ul, li {
   height: 3px;
   width: 100%;
   background: black;
-  top: 100%;
+  top: 99%;
   animation: out 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
 }
 
