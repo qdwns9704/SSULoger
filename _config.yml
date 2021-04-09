@@ -3,17 +3,51 @@ title: SSUloger
 email: qdwns9704@gmail.com
 description: 숭실대학교 오픈소스기반 기초설계 프로젝트
 baseurl: ""
-repository: qdwns9704/qdwns9704.github.io
+url: 'http://qdwns9704.github.io'
 timezone: Asia/Seoul
+
+repository: qdwns9704/qdwns9704.github.io
+
 permalink: /:year/:month/:day/:title/
 
+excerpt_separator: <!--more-->
 
 markdown: kramdown
+
 krandown:
   input: GFM
   highlighter: rouge
 
+plugins:
+  - jekyll-paginate
+
+paginate: 5
+paginate_path: '/page/:num/'
+
+collections:
+  authors:
+    output: true
+    permalink: /authors/:path/
+  tags:
+    output: true
+    permalink: /tags/:path/
+
+defaults:
+  - scope:
+      path: ''
+      type: authors
+    values:
+      layout: author
+  - scope:
+      path: ''
+      type: tags
+    values:
+      layout: tag
+
 exclude: [README.md, Gemfile, Gemfile.lock]
+
 keep_files: [assets, files]
 
+github: [metadata]
 
+asset_url: /assets
