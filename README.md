@@ -37,6 +37,9 @@
 >    8. 포스트는 마크다운으로 작성
 >    9. 포스트 작성은 **master**에서 작업하며, 작성중인 포스트는 **_draft**, 발행 시 **_posts** 디렉토리에 저장
 >    10. 기능 개발은 **_includes** 디렉토리에서 작업하며, 필요한 리소스들은 **assets** 디렉토리에 저장
+>    11. 작성 중인 문서는 **master**에서 **post**로 분기하여 작성
+>    12. 문서 작성이 완료되면 **master**로 합병
+>    13. 합병 이후 각 기능에서 발견한 오류는 **develop**에서 수정 후 커밋
 > 7. 진행 현황
 >    * README.md (진행중)
 >    * header (진행중)
@@ -59,7 +62,7 @@
 >	       * 포스트 기능 구현 중 오류사항 문서화 후 포스트
 >	       * 세분화 된 기능 중 하나 완성
 >
->	
+>
 >  * 2주차 진행현황
 >     * 목표
 >	       * Jekyll 스터디
@@ -78,7 +81,7 @@
 >	       * 메인 화면 디자인 구현 마무리
 >	       * CSS 작성(지속)
 >	       * 포스트 리스트 기능
->	       * README.md 작성(지속) 
+>	       * README.md 작성(지속)
 
 ### 1. 설치
 
@@ -152,27 +155,27 @@ $ git push origin master
   > ```
   > // Jekyll 이 읽어들일 파일의 경로를 변경한다.
   > source: DIR
-  > 
+  >
   > // Jekyll 이 생성할 파일의 경로를 변경한다.
   > destination: DIR
-  > 
+  >
   > // 사용자 플러그인을 비활성화하고 심볼릭 링크를 무시한다.
   > safe: BOOL
-  > 
+  >
   > // 특정 디렉토리나 파일을 변환되지 않도록 제외시킨다.
   > // Site Source 를 기준으로 한 상대경로로 정의하며,
   > // Site Source 디렉토리 바깥의 다른 경로는 지정할 수 없다.
   > exclude: [DIR, FILE, ...]
   > 													
-  > // 특정 디렉토리나 파일을 변환 작업에 강제로 포함시킨다. 
-  > // 사이트 생성 전 Site Destination 을 초기화 때, 유지 할 파일을 지정한다. 
-  > include: [DIR, FILE, ...] 
+  > // 특정 디렉토리나 파일을 변환 작업에 강제로 포함시킨다.
+  > // 사이트 생성 전 Site Destination 을 초기화 때, 유지 할 파일을 지정한다.
+  > include: [DIR, FILE, ...]
   > 															
   > // 사이트 생성에 사용할 타임존을 지정한다.
   > // 이 옵션은 루비가 날짜와 시간을 생성/수정할 때 사용하는 환경변수인 TZ 를 설정한다.
   > // IANA 타임존 데이터베이스의 모든 항목을 사용할 수 있다.
   > timezone: TIMEZONE						
-  > 
+  >
   > // 파일의 인코딩을 지정한다.
   > encoding: ENCODING
   > ```
@@ -191,7 +194,7 @@ $ git push origin master
   >
   > ```
   > ...
-  > {% include file.ext %} 
+  > {% include file.ext %}
   > ...
   > ```
 
@@ -253,4 +256,3 @@ $ git push origin master
 [gfm]: https://guides.github.com/features/mastering-markdown/
 [kramdown]: http://kramdown.gettalong.org
 [rouge]: http://rouge.jneen.net
-
