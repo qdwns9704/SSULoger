@@ -1,6 +1,28 @@
 <!DOCTYPE html>
-<title>SSULoger</title>
-  this is _layouts/default.html
-  index.html은 메인 화면을 어느 페이지로 연결해줄지 결정해줌.
-  
+<html>
 
+<!-- CSS 및 기본 설정 -->
+ <head>
+   {% include head.html %}
+ </head>
+
+ <body class="{{ page.layout | append: '-template' }}">
+  <!-- 상단 네비게이션 바 -->
+  {% include header.html %}
+
+  <!-- 호출한 레이아웃에서 보여줄 내용 -->
+  <div id="wrapper">
+    {{ content }}
+
+
+    <a href="#" id="back-to-top"></a>
+  </div>
+  <!-- 하단 네비게이션 -->
+  {% include footer.html %}
+
+  <!-- JS -->
+  <script src="{{ site.asset_url }}/lib/jquery-1.12.0.min.js"></script>
+  <script src="{{ site.asset_url }}/lib/jquery.magnific-popup.min.js"></script>
+  <script src="{{ site.asset_url }}/js/index.js"></script>
+ </body>
+</html>
